@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25D5EA6E1E25E1C60082E311 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D5EA6D1E25E1C60082E311 /* TTTAttributedLabel.m */; };
+		253D07331E3062B0009A97D4 /* ZZGURLPro.m in Sources */ = {isa = PBXBuildFile; fileRef = 253D07321E3062B0009A97D4 /* ZZGURLPro.m */; };
 		25E190061E247D7800846193 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E190051E247D7800846193 /* main.m */; };
 		25E190091E247D7800846193 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E190081E247D7800846193 /* AppDelegate.m */; };
 		25E1900C1E247D7800846193 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E1900B1E247D7800846193 /* ViewController.m */; };
@@ -19,12 +19,11 @@
 		25E190291E248C2F00846193 /* NSString+ZZGAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E190281E248C2F00846193 /* NSString+ZZGAttribute.m */; };
 		25E1902C1E24B07700846193 /* ZZGRunFlag.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E1902B1E24B07700846193 /* ZZGRunFlag.m */; };
 		25E1902F1E24B4D800846193 /* ZZGAttributeLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E1902E1E24B4D800846193 /* ZZGAttributeLink.m */; };
-		25E190321E24F03300846193 /* ZZGLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E190311E24F03300846193 /* ZZGLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		25D5EA6C1E25E1C60082E311 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
-		25D5EA6D1E25E1C60082E311 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
+		253D07311E3062B0009A97D4 /* ZZGURLPro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZGURLPro.h; sourceTree = "<group>"; };
+		253D07321E3062B0009A97D4 /* ZZGURLPro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZGURLPro.m; sourceTree = "<group>"; };
 		25E190011E247D7800846193 /* HHHAttribute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHHAttribute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25E190051E247D7800846193 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		25E190071E247D7800846193 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,8 +44,6 @@
 		25E1902B1E24B07700846193 /* ZZGRunFlag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZGRunFlag.m; sourceTree = "<group>"; };
 		25E1902D1E24B4D800846193 /* ZZGAttributeLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZGAttributeLink.h; sourceTree = "<group>"; };
 		25E1902E1E24B4D800846193 /* ZZGAttributeLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZGAttributeLink.m; sourceTree = "<group>"; };
-		25E190301E24F03300846193 /* ZZGLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZGLabel.h; sourceTree = "<group>"; };
-		25E190311E24F03300846193 /* ZZGLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZGLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +83,8 @@
 				25E190121E247D7800846193 /* LaunchScreen.storyboard */,
 				25E190151E247D7800846193 /* Info.plist */,
 				25E190041E247D7800846193 /* Supporting Files */,
+				253D07311E3062B0009A97D4 /* ZZGURLPro.h */,
+				253D07321E3062B0009A97D4 /* ZZGURLPro.m */,
 			);
 			path = HHHAttribute;
 			sourceTree = "<group>";
@@ -122,8 +121,6 @@
 		25E1901D1E247DDF00846193 /* ZZGAttributeLabel */ = {
 			isa = PBXGroup;
 			children = (
-				25E190301E24F03300846193 /* ZZGLabel.h */,
-				25E190311E24F03300846193 /* ZZGLabel.m */,
 				25E190211E2486F600846193 /* ZZGAttributeLabel.h */,
 				25E190221E2486F600846193 /* ZZGAttributeLabel.m */,
 				25E190271E248C2F00846193 /* NSString+ZZGAttribute.h */,
@@ -132,8 +129,6 @@
 				25E1902B1E24B07700846193 /* ZZGRunFlag.m */,
 				25E1902D1E24B4D800846193 /* ZZGAttributeLink.h */,
 				25E1902E1E24B4D800846193 /* ZZGAttributeLink.m */,
-				25D5EA6C1E25E1C60082E311 /* TTTAttributedLabel.h */,
-				25D5EA6D1E25E1C60082E311 /* TTTAttributedLabel.m */,
 			);
 			name = ZZGAttributeLabel;
 			sourceTree = "<group>";
@@ -170,6 +165,7 @@
 				TargetAttributes = {
 					25E190001E247D7800846193 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 338G73X9F5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -217,9 +213,8 @@
 				25E190291E248C2F00846193 /* NSString+ZZGAttribute.m in Sources */,
 				25E190091E247D7800846193 /* AppDelegate.m in Sources */,
 				25E190061E247D7800846193 /* main.m in Sources */,
-				25E190321E24F03300846193 /* ZZGLabel.m in Sources */,
 				25E190231E2486F600846193 /* ZZGAttributeLabel.m in Sources */,
-				25D5EA6E1E25E1C60082E311 /* TTTAttributedLabel.m in Sources */,
+				253D07331E3062B0009A97D4 /* ZZGURLPro.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +332,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 338G73X9F5;
 				INFOPLIST_FILE = HHHAttribute/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uknower.HHHAttribute;
@@ -348,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 338G73X9F5;
 				INFOPLIST_FILE = HHHAttribute/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uknower.HHHAttribute;
