@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		253D07331E3062B0009A97D4 /* ZZGURLPro.m in Sources */ = {isa = PBXBuildFile; fileRef = 253D07321E3062B0009A97D4 /* ZZGURLPro.m */; };
 		25E190061E247D7800846193 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E190051E247D7800846193 /* main.m */; };
 		25E190091E247D7800846193 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E190081E247D7800846193 /* AppDelegate.m */; };
 		25E1900C1E247D7800846193 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E1900B1E247D7800846193 /* ViewController.m */; };
@@ -22,8 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		253D07311E3062B0009A97D4 /* ZZGURLPro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZGURLPro.h; sourceTree = "<group>"; };
-		253D07321E3062B0009A97D4 /* ZZGURLPro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZGURLPro.m; sourceTree = "<group>"; };
 		25E190011E247D7800846193 /* HHHAttribute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHHAttribute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25E190051E247D7800846193 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		25E190071E247D7800846193 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,8 +80,6 @@
 				25E190121E247D7800846193 /* LaunchScreen.storyboard */,
 				25E190151E247D7800846193 /* Info.plist */,
 				25E190041E247D7800846193 /* Supporting Files */,
-				253D07311E3062B0009A97D4 /* ZZGURLPro.h */,
-				253D07321E3062B0009A97D4 /* ZZGURLPro.m */,
 			);
 			path = HHHAttribute;
 			sourceTree = "<group>";
@@ -214,7 +209,6 @@
 				25E190091E247D7800846193 /* AppDelegate.m in Sources */,
 				25E190061E247D7800846193 /* main.m in Sources */,
 				25E190231E2486F600846193 /* ZZGAttributeLabel.m in Sources */,
-				253D07331E3062B0009A97D4 /* ZZGURLPro.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
