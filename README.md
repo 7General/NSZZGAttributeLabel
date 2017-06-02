@@ -31,7 +31,7 @@ EXAMPLE
     CGFloat height = [self.constString HeightParagraphSpeace:6 withFont:[UIFont systemFontOfSize:18] AndWidth:100];
     self.AttriLabel.frame = CGRectMake(100, 100, 100, height);
 }
-```objc
+```
 
 ### 富文本点击事件
 ```objc
@@ -39,4 +39,4 @@ EXAMPLE
 -(void)ZZGLabel:(ZZGAttributeLabel *)label didSelectWith:(NSString *)content {
     NSLog(@"--zzg---%@",content);
 }
-```objc
+```
