@@ -2,6 +2,9 @@
 富文本编辑，显示，添加事件
 
 
+EXAMPLE
+
+```objc
 /**创建富文本标签*/
 -(void)initAttribute{
     self.AttriLabel = [ZZGAttributeLabel ZZGLabel];
@@ -28,8 +31,12 @@
     CGFloat height = [self.constString HeightParagraphSpeace:6 withFont:[UIFont systemFontOfSize:18] AndWidth:100];
     self.AttriLabel.frame = CGRectMake(100, 100, 100, height);
 }
+```objc
 
+### 富文本点击事件
+```objc
 #pragma mark - 富文本点击事件
 -(void)ZZGLabel:(ZZGAttributeLabel *)label didSelectWith:(NSString *)content {
     NSLog(@"--zzg---%@",content);
 }
+```objc
