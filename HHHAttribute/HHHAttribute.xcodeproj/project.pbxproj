@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		222C1DA4207B59EC006EC6D6 /* NSAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 222C1DA3207B59EC006EC6D6 /* NSAttributedLabel.m */; };
+		222C1DA7207B5E8B006EC6D6 /* NSAttributedLabelLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 222C1DA6207B5E8B006EC6D6 /* NSAttributedLabelLink.m */; };
 		25E190061E247D7800846193 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E190051E247D7800846193 /* main.m */; };
 		25E190091E247D7800846193 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E190081E247D7800846193 /* AppDelegate.m */; };
 		25E1900C1E247D7800846193 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E1900B1E247D7800846193 /* ViewController.m */; };
@@ -21,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		222C1DA2207B59EC006EC6D6 /* NSAttributedLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSAttributedLabel.h; sourceTree = "<group>"; };
+		222C1DA3207B59EC006EC6D6 /* NSAttributedLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAttributedLabel.m; sourceTree = "<group>"; };
+		222C1DA5207B5E8B006EC6D6 /* NSAttributedLabelLink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSAttributedLabelLink.h; sourceTree = "<group>"; };
+		222C1DA6207B5E8B006EC6D6 /* NSAttributedLabelLink.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAttributedLabelLink.m; sourceTree = "<group>"; };
 		25E190011E247D7800846193 /* HHHAttribute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHHAttribute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25E190051E247D7800846193 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		25E190071E247D7800846193 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +60,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		222C1DA1207B59C0006EC6D6 /* NSAttributeLabel */ = {
+			isa = PBXGroup;
+			children = (
+				222C1DA2207B59EC006EC6D6 /* NSAttributedLabel.h */,
+				222C1DA3207B59EC006EC6D6 /* NSAttributedLabel.m */,
+				222C1DA5207B5E8B006EC6D6 /* NSAttributedLabelLink.h */,
+				222C1DA6207B5E8B006EC6D6 /* NSAttributedLabelLink.m */,
+			);
+			name = NSAttributeLabel;
+			sourceTree = "<group>";
+		};
 		25E18FF81E247D7800846193 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +90,7 @@
 		25E190031E247D7800846193 /* HHHAttribute */ = {
 			isa = PBXGroup;
 			children = (
+				222C1DA1207B59C0006EC6D6 /* NSAttributeLabel */,
 				25E1901D1E247DDF00846193 /* ZZGAttributeLabel */,
 				25E1901C1E247DD200846193 /* MainViewCOntroller */,
 				25E1901B1E247DC000846193 /* Basic */,
@@ -209,6 +227,8 @@
 				25E190091E247D7800846193 /* AppDelegate.m in Sources */,
 				25E190061E247D7800846193 /* main.m in Sources */,
 				25E190231E2486F600846193 /* ZZGAttributeLabel.m in Sources */,
+				222C1DA4207B59EC006EC6D6 /* NSAttributedLabel.m in Sources */,
+				222C1DA7207B5E8B006EC6D6 /* NSAttributedLabelLink.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

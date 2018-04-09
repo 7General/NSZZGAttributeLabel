@@ -22,6 +22,8 @@
 
 @property (nonatomic, weak) id<ZZGAttributeLabelDelegate> delegate;
 
+@property (readwrite, nonatomic, copy) NSAttributedString *attributedText;
+
 /**富文本字段*/
 @property (nonatomic, strong) NSAttributedString * attributeString;
 
