@@ -12,12 +12,7 @@
 #import<CoreText/CoreText.h>
 #import "NSString+ZZGAttribute.h"
 
-@interface ZZGAttributeLabel() {
-@private
-    BOOL _needsFramesetter;
-    CTFramesetterRef _framesetter;
-    CTFramesetterRef _highlightFramesetter;
-}
+@interface ZZGAttributeLabel()
 
 /**超链接数据*/
 @property (nonatomic, strong) NSMutableArray * links;
@@ -31,8 +26,6 @@
 @end
 
 @implementation ZZGAttributeLabel
-/* new */
-@synthesize attributedText = _attributedText;
 
 -(NSMutableArray *)links{
     if (_links == nil) {
@@ -145,7 +138,8 @@
 
 
 
-//###################获取点击文字在文章索引/########################
+//#####################获取点击文字在文章索引######################
+
 - (CFIndex)characterIndexAtPoint:(CGPoint)p {
     if (!CGRectContainsPoint(self.bounds, p)) {
         return NSNotFound;
@@ -163,15 +157,13 @@
     
     CGMutablePathRef path = CGPathCreateMutable();
     CGPathAddRect(path, NULL, textRect);
-//    CTFrameRef frame = CTFramesetterCreateFrame([self framesetter], CFRangeMake(0, (CFIndex)[self.attributedText length]), path, NULL);
-//    if (frame == NULL) {
-//        CFRelease(path);
-//        return NSNotFound;
-//    }
-    
+    //CTFrameRef frame = CTFramesetterCreateFrame([self framesetter], CFRangeMake(0, (CFIndex)[self.attributedText length]), path, NULL);
     CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((__bridge CFAttributedStringRef)self.renderedAttributedText);
     CTFrameRef frame = CTFramesetterCreateFrame(framesetter, CFRangeMake(0, (CFIndex)[self.renderedAttributedText length]), path, NULL);
-   
+    if (frame == NULL) {
+        CFRelease(path);
+        return NSNotFound;
+    }
     
     CFArrayRef lines = CTFrameGetLines(frame);
     NSInteger numberOfLines = self.numberOfLines > 0 ? MIN(self.numberOfLines, CFArrayGetCount(lines)) : CFArrayGetCount(lines);
@@ -223,47 +215,10 @@
     return idx;
 }
 
-- (CTFramesetterRef)framesetter {
-    if (_needsFramesetter) {
-        @synchronized(self) {
-            CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((__bridge CFAttributedStringRef)self.renderedAttributedText);
-            [self setFramesetter:framesetter];
-            [self setHighlightFramesetter:nil];
-            _needsFramesetter = NO;
-            
-            if (framesetter) {
-                CFRelease(framesetter);
-            }
-        }
-    }
-    
-    return _framesetter;
-}
 
 
-- (void)setHighlightFramesetter:(CTFramesetterRef)highlightFramesetter {
-    if (highlightFramesetter) {
-        CFRetain(highlightFramesetter);
-    }
-    
-    if (_highlightFramesetter) {
-        CFRelease(_highlightFramesetter);
-    }
-    
-    _highlightFramesetter = highlightFramesetter;
-}
 
-- (void)setFramesetter:(CTFramesetterRef)framesetter {
-    if (framesetter) {
-        CFRetain(framesetter);
-    }
-    
-    if (_framesetter) {
-        CFRelease(_framesetter);
-    }
-    
-    _framesetter = framesetter;
-}
+
 
 
 

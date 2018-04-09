@@ -44,18 +44,18 @@
     self.AttriLabel.layer.borderColor = [UIColor redColor].CGColor;
     [self.view addSubview:self.AttriLabel];
 
-    self.constString = @"今天和昨天,白日依山尽，黄河入海流。";
+    self.constString = @"今天和昨天,白日依山尽，黄河入海流。您好,很高兴为您服务,\n\r请问有什么可以帮您的\n服务费用问题\n贷款相关问题\n过户相关问题\n\r买车相关问题\n可以直接向小瓜提问";
     
     NSAttributedString *attributedString  = [self.constString stringWithParagraphlineSpeace:3 textColor:[UIColor blueColor] textFont:[UIFont systemFontOfSize:15]];
     self.AttriLabel.attributeString = attributedString;
     
-    NSRange  range = [self.constString rangeOfString:@"天" options:(NSCaseInsensitiveSearch)];
+    NSRange  range = [self.constString rangeOfString:@"服务费用问题" options:(NSCaseInsensitiveSearch)];
     [self.AttriLabel addLinkStringRange:range flag:@"day"];
     
-    NSRange  range1 = [self.constString rangeOfString:@"昨" options:(NSCaseInsensitiveSearch)];
+    NSRange  range1 = [self.constString rangeOfString:@"过户相关问题" options:(NSCaseInsensitiveSearch)];
     [self.AttriLabel addLinkStringRange:range1 flag:@"yestarday"];
     
-    NSRange  range2 = [self.constString rangeOfString:@"日依山尽" options:(NSCaseInsensitiveSearch)];
+    NSRange  range2 = [self.constString rangeOfString:@"买车相关问题" options:(NSCaseInsensitiveSearch)];
     [self.AttriLabel addLinkStringRange:range2 flag:@"flga2"];
 
     [self.AttriLabel ApplayDraw];
