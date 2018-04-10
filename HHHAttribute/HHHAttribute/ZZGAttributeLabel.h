@@ -24,6 +24,9 @@
 
 @property (readwrite, nonatomic, copy) NSAttributedString *attributedText;
 
+@property (nonatomic, assign) IBInspectable UIEdgeInsets textInsets;
+@property (nonatomic, strong) IBInspectable NSAttributedString *attributedTruncationToken;
+
 /**富文本字段*/
 @property (nonatomic, strong) NSAttributedString * attributeString;
 
